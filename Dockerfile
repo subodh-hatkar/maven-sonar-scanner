@@ -3,7 +3,7 @@ FROM maven:3.6.3-openjdk-11-slim
 ENV SONAR_RUNNER_HOME=/usr/lib/sonar-scanner
 
 RUN apt-get update && \
-	apt-get install -y git make curl wget unzip jq nodejs
+	apt-get install -y git make curl wget unzip jq nodejs uuid-runtime
 	
 
 ARG APP=sonar-scanner
